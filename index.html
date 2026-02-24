@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Shashikant Kumar – BCA Graduate & Aspiring Software/Web Developer. Explore my skills, projects, and contact details." />
+  <title>Shashikant Kumar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR (CSS-only hamburger via checkbox hack) ========== -->
+  <input type="checkbox" id="menuToggle" class="menu-toggle-input" />
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">SK<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <!-- label acts as the hamburger button -->
+      <label for="menuToggle" class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Shashikant<br /><span>Kumar</span></h1>
+      <!-- CSS typing animation -->
+      <p class="hero-role">
+        <span class="typed-text" id="typedText"></span>
+      </p>
+      <p class="hero-bio">
+        Detail-oriented BCA graduate with strong fundamentals in programming and web technologies,
+        seeking an entry-level IT role to apply skills and grow professionally.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:shashikantkumar221716@gmail.com" class="social-icon" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+        <a href="tel:+917234893558" class="social-icon" title="Phone" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.13 1 .36 1.97.72 2.9a2 2 0 0 1-.44 2.1L7.91 9a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.1-.44c.93.36 1.9.59 2.9.72A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </a>
+        <a href="https://github.com/s-h-a-s-h-i" target="_blank" rel="noopener noreferrer" class="social-icon"
+          title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <img src="profile.jpg" alt="Shashikant Kumar" class="profile-img">
+        </div>
+      </div>
+
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Shashikant Kumar</strong>, a passionate BCA graduate from
+            Sri Ramkishun College, Varanasi (MGKVP University). I love building things
+            for the web and constantly expanding my technical skill set.
+          </p>
+          <p>
+            As a fresher, I bring enthusiasm, a quick-learning attitude, and a solid
+            foundation in both frontend and backend technologies. I'm actively seeking
+            an entry-level IT role where I can contribute and grow.
+          </p>
+          <ul class="about-details">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Maharajpur, Awarai Kala, Ballia, UP
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              shashikantkumar221716@gmail.com
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.13 1 .36 1.97.72 2.9a2 2 0 0 1-.44 2.1L7.91 9a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.1-.44c.93.36 1.9.59 2.9.72A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +91 72348 93558
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              Date of Birth: 08 June 2005
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-icon">💻</div>
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🛠️</div>
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Tech Skills</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-number">BCA</div>
+            <div class="stat-label">Degree</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🚀</div>
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Passion to Learn</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical <span>Skills</span></h2>
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Programming Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java (Core)</span>
+          </div>
+
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <polyline points="8 21 12 17 16 21" />
+            </svg>
+            Web Development
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+            </svg>
+            Database
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+          </div>
+
+        </div>
+
+        <!-- Core Skills -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Core Skills &amp; Tools
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Logical Thinking</span>
+            <span class="skill-tag">Quick Learner</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img gym-bg">
+            <div class="project-overlay">
+              <a href="https://s-h-a-s-h-i.github.io/gym-/" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">View Live</a>
+            </div>
+            <div class="project-icon">💪</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Static Gym Website</h3>
+            <p class="project-desc">
+              A fully responsive static gym website showcasing facilities, classes, and membership plans.
+              Built with clean UI and smooth navigation.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://s-h-a-s-h-i.github.io/gym-/" target="_blank" rel="noopener noreferrer"
+              class="project-link">🔗 Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img property-bg">
+            <div class="project-overlay">
+              <a href="https://s-h-a-s-h-i.github.io/property-build/" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">View Live</a>
+            </div>
+            <div class="project-icon">🏠</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Property Builder Website</h3>
+            <p class="project-desc">
+              A modern property builder website featuring property listings, contact forms,
+              and an elegant design for a real estate business.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://s-h-a-s-h-i.github.io/property-build/" target="_blank" rel="noopener noreferrer"
+              class="project-link">🔗 Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">🎓</div>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="timeline-institute">Sri Ramkishun College, Gokul, Karasada, Varanasi</p>
+            <p class="timeline-sub">MGKVP University</p>
+            <span class="timeline-tag">Graduation</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">📚</div>
+            <h3>Intermediate (12th)</h3>
+            <p class="timeline-institute">UP Board</p>
+            <span class="timeline-tag">Higher Secondary</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">🏫</div>
+            <h3>High School (10th)</h3>
+            <p class="timeline-institute">UP Board</p>
+            <span class="timeline-tag">Secondary</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm available for freelance work and full-time opportunities.
+            Feel free to reach out — I'd love to hear from you!
+          </p>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-card-label">Email</p>
+                <a href="mailto:shashikantkumar221716@gmail.com">shashikantkumar221716@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.13 1 .36 1.97.72 2.9a2 2 0 0 1-.44 2.1L7.91 9a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.1-.44c.93.36 1.9.59 2.9.72A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-card-label">Phone</p>
+                <a href="tel:+917234893558">+91 72348 93558</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-card-label">Location</p>
+                <span>Ballia, Uttar Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- mailto: form — no JS needed -->
+        <form class="contact-form" id="contactForm" action="mailto:shashikantkumar221716@gmail.com" method="get"
+          enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job Opportunity" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="body" rows="5" placeholder="Hello Shashikant, I'd like to..."
+              required></textarea>
+          </div>
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-full">Send Message 🚀</button>
+          <p id="formSuccess" style="display:none; color: var(--accent); margin-top: 10px; text-align: center;">Message
+            sent successfully!</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed &amp; Built by <strong>Shashikant Kumar</strong> &nbsp;|&nbsp; &copy; 2025 All Rights Reserved
+      </p>
+      <p class="footer-declaration">
+        I hereby declare that the above information is true and correct to the best of my knowledge.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
